@@ -12,7 +12,7 @@
 .nav{
     width:auto;
     height: auto;
-    background-color: @gray-light;
+    background-color: #5C5C8A;
 }
 
 
@@ -48,5 +48,9 @@
 
 .learn-more h3{
     display: inline;
+}
+
+.learn-more{
+    background-color: #5C5C8A;   
 }
 
