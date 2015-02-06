@@ -19,6 +19,7 @@
     height: 500px;
     background-image:url(csb.jpg);
     background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .jumbotron h1{
