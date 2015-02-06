@@ -12,7 +12,7 @@
 .nav{
     width:auto;
     height: auto;
-    background-color: #5C5C8A;
+    background-color: white;
 }
 
 
@@ -22,7 +22,7 @@
 
 
 .jumbotron{
-    height: 500px;
+    height: 800px;
     background-image:url(csb.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -51,6 +51,6 @@
 }
 
 .learn-more{
-    background-color: #5C5C8A;   
+    background-color: white;   
 }
 
