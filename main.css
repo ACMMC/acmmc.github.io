@@ -12,7 +12,7 @@
 .nav{
     width:auto;
     height: auto;
-    background-color: white;
+    background-color: @gray-light;
 }
 
 
