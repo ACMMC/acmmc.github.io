@@ -28,7 +28,7 @@
     background-size: 100%;
 }
 
-.jumbotron h1{
+.jumbotron .container h1{
     color:white;
     font-family: "Times New Roman", Times, serif;
     font-size: 48px;
