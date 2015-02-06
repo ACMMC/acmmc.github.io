@@ -11,6 +11,6 @@
 
 .jumbotron{
     height: 500px;
-    background-image:url('https://github.com/ACMMC/acmmc.github.io/blob/master/csb.jpg');
+    background-image:url(csb.jpg);
     
 }
