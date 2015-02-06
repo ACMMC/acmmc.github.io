@@ -16,6 +16,7 @@
 
 
 .jumbotron{
+    font-family: "Times New Roman", Times, serif;
     height: 500px;
     background-image:url(csb.jpg);
     background-repeat: no-repeat;
@@ -29,3 +30,9 @@
     
 }
 
+.jumbotron p{
+    color:white;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
