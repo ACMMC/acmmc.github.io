@@ -9,9 +9,14 @@
     text-transform: uppercase;
 }
 
+
+.nav li{
+    display: inline;
+}
 .jumbotron{
     height: 500px;
     background-image:url(csb.jpg);
     
     
 }
+
