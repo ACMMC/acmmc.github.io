@@ -1,6 +1,5 @@
 .title h1{
     color: rgb(200,0,0);
     font-size: 11px;
-    margin-left: auto;
-    margin-right: auto;
+    padding-left: 100;
 }
