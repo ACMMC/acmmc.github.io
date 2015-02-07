@@ -49,6 +49,7 @@
 .calendar{
     padding-left: auto;
     padding-right: auto;
+    align-content: center;
 }
 
 .learn-more h3{
