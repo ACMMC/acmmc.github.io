@@ -47,7 +47,7 @@
 }
 
 .calendar iframe{
-    position: absolute;
+    object-position: center;
 }
 
 .learn-more h3{
