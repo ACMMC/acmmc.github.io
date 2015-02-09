@@ -47,6 +47,11 @@
     
 }
 
+.jumbotron .container{
+    text-align: center;
+    
+}
+
 .about{
     padding-bottom: 100px;
     
@@ -80,5 +85,9 @@
 
 .small-contact p{
     display: inline;
+}
+
+.small-contact i{
+    padding-left: 10px;
 }
 
