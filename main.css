@@ -35,8 +35,9 @@
 .jumbotron{
     height: 500px;
     //height: 630px;
-    background-image:url(mayfield-git.JPG);
+    background-image:url(CSB-view-from%20north.jpg);
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     
 }
