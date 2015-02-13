@@ -1,5 +1,5 @@
 .nav a {
-    color:white;
+    color:currentColor;
     font-size: 11px;
     font-weight: bold;
     padding-top: 14px;
@@ -12,18 +12,30 @@
 .nav{
     width:auto;
     height: auto;
-    background-color: currentColor;
+    background-color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 
 .nav li{
     display: inline;
+    
+}
+
+.nav img{
+    text-align: left;
+    padding-top: 2px;
+    height: auto;
+    //position: relative;
+    display: inline;
 }
 
 
 .jumbotron{
-    height: 630px;
-    background-image:url(csb.jpg);
+    height: 500px;
+    //height: 630px;
+    background-image:url(mayfield-git.JPG);
     background-repeat: no-repeat;
     background-size: cover;
     
@@ -31,7 +43,8 @@
 
 .jumbotron .container h1{
     color:white;
-    font-family: "Times New Roman", Times, serif;
+    font-family:  ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+    //font-family: "Times New Roman", Times, serif;
     font-size: 56px;
     font-weight: lighter;
     text-align: center;
@@ -40,7 +53,8 @@
 
 .jumbotron p{
     color:white;
-    font-family: "Times New Roman", Times, serif;
+    font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+    //font-family: "Times New Roman", Times, serif;
     font-size: 18px;
     font-style: italic;
     text-align: center;
