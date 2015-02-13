@@ -1,0 +1,95 @@
+.nav a {
+    color:currentColor;
+    font-size: 11px;
+    font-weight: bold;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-transform: uppercase;
+}
+
+.nav{
+    width:auto;
+    height: auto;
+    background-color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+.nav li{
+    display: inline;
+    
+}
+
+.nav img{
+    text-align: left;
+    padding-top: 2px;
+    height: auto;
+    display: inline;
+}
+
+.jumbotron{
+    height: 500px;
+    //height: 630px;
+    background-image:url(mayfield-git.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.jumbotron .container h1{
+    color:white;
+    font-family:  ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+    //font-family: "Times New Roman", Times, serif;
+    font-size: 56px;
+    font-weight: lighter;
+    text-align: center;
+    
+}
+
+.jumbotron p{
+    color:white;
+    font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+    //font-family: "Times New Roman", Times, serif;
+    font-size: 18px;
+    font-style: italic;
+    text-align: center;
+    
+}
+
+.jumbotron .container{
+    text-align: center;
+    
+}
+
+.learn-more h3{
+    display: inline;
+}
+
+.learn-more{
+    background-color: white;   
+}
+
+.small-contact{
+    height: 20px;
+    text-align: center;
+    bottom: auto;
+    padding-top: 15px;
+    
+}
+
+.small-contact p{
+    display: inline;
+}
+
+.small-contact i{
+    padding-left: 10px;
+}
+
+.control-group{
+    text-align: left;
+    padding-left: 100px;
+       
+}
