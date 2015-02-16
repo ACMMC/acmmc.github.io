@@ -2,11 +2,10 @@
     color:currentColor;
     font-size: 11px;
     font-weight: bold;
-    padding-top: 14px;
-    padding-bottom: 14px;
     padding-left: 10px;
     padding-right: 10px;
     text-transform: uppercase;
+    position: absolute;
 }
 
 .nav{
@@ -14,8 +13,7 @@
     height: auto;
     background-color: white;
     padding-top: 5px;
-    padding-bottom: 5px;
-    display: inline;
+    padding-bottom: 7px;
 }
 
 
@@ -24,19 +22,18 @@
     
 }
 
-.nav a img{
+.nav img{
     text-align: left;
-    padding-top: 2px;
     height: auto;
-    display: inline-block;
+    display: inline;
 }
+
 
 .jumbotron{
     height: 500px;
-    //height: 630px;
     background-image:url(mayfield-git.JPG);
-    background-position: center;
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     
 }
@@ -65,7 +62,6 @@
     text-align: center;
     
 }
-
 .learn-more h3{
     display: inline;
 }
