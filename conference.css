@@ -31,29 +31,30 @@
 
 .jumbotron{
     height: 500px;
-    background-image:url(CSB-view-from%20north.jpg);
+    //height: 630px;
+    background-image:url(ACMconferencePoster.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size:contain;
     
 }
 
 .jumbotron .container h1{
     color:white;
-    font-family:  'Open Sans', sans-serif;
+    font-family:  ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+    //font-family: "Times New Roman", Times, serif;
     font-size: 56px;
-    font-weight: normal;
-    padding-top: 50px;
+    font-weight: lighter;
     text-align: center;
-    
     
 }
 
-.jumbotron h2{
+.jumbotron p{
     color:white;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 32px;
-    font-weight: normal;
+    font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+    //font-family: "Times New Roman", Times, serif;
+    font-size: 18px;
+    font-style: italic;
     text-align: center;
     
 }
@@ -68,27 +69,38 @@
     
 }
 
-#footer{
-    //height: 20px;
-    width: auto;
-    height: auto;
-    text-align: center;
-    //bottom: auto;
-    padding-top: auto;
-    padding-bottom: auto;
-    
+.cal{
+    padding-bottom: 100px;
 }
 
-#footer p{
+.calendar iframe{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.learn-more h3{
     display: inline;
 }
 
-#footer i{
-    padding-left: 10px;
+.learn-more{
+    background-color: white;   
 }
 
-#footer .container{
-    border-top:1px solid #dddddd
+.small-contact{
+    height: 20px;
+    text-align: center;
+    bottom: auto;
+    padding-top: 15px;
+    
+}
+
+.small-contact p{
+    display: inline;
+}
+
+.small-contact i{
+    padding-left: 10px;
 }
 
 .control-group{

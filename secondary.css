@@ -31,6 +31,7 @@
 
 .jumbotron{
     height: 500px;
+    //height: 630px;
     background-image:url(CSB-view-from%20north.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -46,10 +47,9 @@
     padding-top: 50px;
     text-align: center;
     
-    
 }
 
-.jumbotron h2{
+.jumbotron .container h2{
     color:white;
     font-family: 'Open Sans', sans-serif;
     font-size: 32px;
@@ -68,27 +68,38 @@
     
 }
 
-#footer{
-    //height: 20px;
-    width: auto;
-    height: auto;
-    text-align: center;
-    //bottom: auto;
-    padding-top: auto;
-    padding-bottom: auto;
-    
+.cal{
+    padding-bottom: 100px;
 }
 
-#footer p{
+.calendar iframe{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.learn-more h3{
     display: inline;
 }
 
-#footer i{
-    padding-left: 10px;
+.learn-more{
+    background-color: white;   
 }
 
-#footer .container{
-    border-top:1px solid #dddddd
+.small-contact{
+    height: 20px;
+    text-align: center;
+    bottom: auto;
+    padding-top: 15px;
+    
+}
+
+.small-contact p{
+    display: inline;
+}
+
+.small-contact i{
+    padding-left: 10px;
 }
 
 .control-group{

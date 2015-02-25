@@ -15,17 +15,18 @@
         <a href=index.html><img src="header-logo.png" height="200" width="200"></img></a>
         <ul id="tabs" class = "nav nav-pills navbar-right" data-tabs="tabs">
           <li><a href="about.html" data-toggle="tab">About</a></li>
-          <li><a href="#moveToCal" data-toggle="tab">Calendar</a></li>
-          <li><a href="#" data-toggle="tab">Conference</a></li>
-          <li><a href="#" data-toggle="tab">Contact</a></li>
+          <li><a href=calendar.html data-toggle="tab">Calendar</a></li>
+          <li><a href=conference.html data-toggle="tab">Conference</a></li>
+          <li><a href=contact.html data-toggle="tab">Contact</a></li>
+          <li class = "active"><a href=joinnow.html data-toggle="tab">Join Now</a></li>
         </ul>
       </div>
     </div>
 
     <div class="jumbotron">
       <div class="container">
-        <h1>ACM MC</h1>
-        <p>The Student Chapter of the Association for Computing Machinery</p>
+        <h1>Become A Member</h1>
+          <h2>Collaborate with us</h2>
       </div>
     </div
 
@@ -34,17 +35,17 @@
             <div class="container">
                 <h1>Join ACM@MC</h1>
                 <p>If you are interested in becoming a part of ACM@MC, come get to know the organization by coming to meetings and events! All our events can be found on our calendar, as well as our chapter meetings, which are open to the public. </p>
-                <p>By joining ACM@MC, you will unlock access to our network, including our Google Drive and GitHub, as well as after hours access to our lab and the ability to hold an executive position. </p>
+                <p>By joining ACM@MC, you will unlock access to our network, including our Google Drive and GitHub, as well as after hours access to our lab, our coffee stash, and the ability to be an active voting member as well as hold an executive position. </p>
             </div>
         </div> 
         
-            <form class="form-horizontal">
+<form class="form-horizontal">
 <fieldset>
 
 <!-- Form Name -->
 <legend>Join ACM@MC</legend>
 
-<!-- Text input-->
+<ul class="form1">
 <div class="control-group">
   <label class="control-label" for="First Name">First Name</label>
   <div class="controls">
@@ -115,8 +116,9 @@
     
   </div>
 </div>
+    </ul>
 
-<!-- Text input-->
+<ul class="form2">
 <div class="control-group">
   <label class="control-label" for="Grade">Year In School</label>
   <div class="controls">
@@ -142,6 +144,48 @@
     <p class="help-block">Red number on your student ID</p>
   </div>
 </div>
+    </ul>
+    
+    <ul class="form3">
+    <!-- Multiple Checkboxes -->
+<div class="control-group">
+  <label class="control-label" for="checkboxes">Interests</label>
+  <div class="controls">
+    <label class="checkbox" for="checkboxes-0">
+      <input type="checkbox" name="checkboxes" id="checkboxes-0" value="Robotics">
+      Robotics
+    </label>
+    <label class="checkbox" for="checkboxes-1">
+      <input type="checkbox" name="checkboxes" id="checkboxes-1" value="Programming Competitions">
+      Programming Competitions
+    </label>
+    <label class="checkbox" for="checkboxes-2">
+      <input type="checkbox" name="checkboxes" id="checkboxes-2" value="iOS Development">
+      iOS Development
+    </label>
+    <label class="checkbox" for="checkboxes-3">
+      <input type="checkbox" name="checkboxes" id="checkboxes-3" value="Android Development">
+      Android Development
+    </label>
+    <label class="checkbox" for="checkboxes-4">
+      <input type="checkbox" name="checkboxes" id="checkboxes-4" value="Website Development">
+      Website Development
+    </label>
+    <label class="checkbox" for="checkboxes-5">
+      <input type="checkbox" name="checkboxes" id="checkboxes-5" value="Game Development">
+      Game Development
+    </label>
+    <label class="checkbox" for="checkboxes-6">
+      <input type="checkbox" name="checkboxes" id="checkboxes-6" value="Hardware Design">
+      Hardware Design
+    </label>
+    <label class="checkbox" for="checkboxes-7">
+      <input type="checkbox" name="checkboxes" id="checkboxes-7" value="Education">
+      Education
+    </label>
+  </div>
+</div>
+    </ul>
 
 </fieldset>
 </form>
