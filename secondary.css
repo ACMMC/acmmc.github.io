@@ -107,3 +107,7 @@
     padding-left: 100px;
        
 }
+
+#footer .container{
+    border-top:1px solid #dddddd
+}
