@@ -2,10 +2,10 @@
 <html>
   <head>
     <link href="joinnow.css" rel="stylesheet">
-      
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-
+    <script src="//www.parsecdn.com/js/parse-1.6.7.min.js"></script>
 
   </head>
   
@@ -93,7 +93,7 @@
 <div class="control-group">
   <label class="control-label" for="City">City</label>
   <div class="controls">
-    <input id="City" name="City" type="text" placeholder="" class="input-small">
+    <input id="City" name="City" type="text" placeholder="" class="input-xlarge">
     
   </div>
 </div>
@@ -102,7 +102,7 @@
 <div class="control-group">
   <label class="control-label" for="State">State</label>
   <div class="controls">
-    <input id="State" name="State" type="text" placeholder="" class="input-mini">
+    <input id="State" name="State" type="text" placeholder="" class="input-xlarge">
     
   </div>
 </div>
@@ -111,7 +111,7 @@
 <div class="control-group">
   <label class="control-label" for="Zipcode">Zip Code</label>
   <div class="controls">
-    <input id="Zipcode" name="Zipcode" type="text" placeholder="" class="input-mini">
+    <input id="Zipcode" name="Zipcode" type="text" placeholder="" class="input-xlarge" onchange="checkFilled()">
     
   </div>
 </div>
@@ -121,7 +121,7 @@
 <div class="control-group">
   <label class="control-label" for="Grade">Year In School</label>
   <div class="controls">
-    <input id="Grade" name="Grade" type="text" placeholder="" class="input-large">
+    <input id="Grade" name="Grade" type="text" placeholder="" class="input-xlarge">
     
   </div>
 </div>
@@ -130,7 +130,7 @@
 <div class="control-group">
   <label class="control-label" for="Major">Major</label>
   <div class="controls">
-    <input id="Major" name="Major" type="text" placeholder="" class="input-large">
+    <input id="Major" name="Major" type="text" placeholder="" class="input-xlarge">
     
   </div>
 </div>
@@ -139,9 +139,150 @@
 <div class="control-group">
   <label class="control-label" for="ID">Student ID #</label>
   <div class="controls">
-    <input id="ID" name="ID" type="text" placeholder="" class="input-large">
+    <input id="ID" name="ID" type="text" placeholder="" class="input-xlarge" onchange="checkFilled()">
     <p class="help-block">Red number on your student ID</p>
   </div>
+</div>
+    
+<div class="control-group">
+    <button type="button" onclick="clickHandler()">Submit</button>
+    
+    <script>
+        var zipCodeInput = $( "#Zipcode" );
+        var studentIDInput = $( "#ID" );
+        var reg = /^(\s*|\d+)$/;
+        zipCodeInput.keyup(function() {
+            if(!reg.test(zipCodeInput.val()))
+                {
+                    zipCodeInput.css("backgroundColor", "#CD5C5C");
+                    //zipCodeInput.css({ opacity: 0.8 });
+                }
+            else
+                {
+                    zipCodeInput.css("backgroundColor","white");
+                }
+        });
+        
+        studentIDInput.keyup(function() {
+            if(!reg.test(studentIDInput.val()))
+                {
+                    studentIDInput.css("backgroundColor", "#CD5C5C");
+                    //studentIDInput.css({ opacity: 0.8 });
+                }
+            else
+                {
+                    studentIDInput.css("backgroundColor","white");
+                }
+        });
+        
+        //Got this from Stackoverflow
+        // creates a new exception type:
+        function FatalError(){
+            Error.apply(this, arguments); 
+            this.name = "FatalError"; 
+        }
+        FatalError.prototype = Object.create(Error.prototype);
+
+        // and then, use this to trigger the error:
+        //throw new FatalError("Something went badly wrong!");
+        
+        function isAlpha(str) {
+            return /^[a-zA-Z]+$/.test(str);
+        }
+        
+        function numValidation(attribute){
+            
+            if(isAlpha(attribute)){
+                alert("TYPE ERROR: Zipcode or StudentID has to be a number");
+                throw new FatalError("Something went wrong..");
+                
+            }else{
+                
+                console.log("Success!")
+            }
+        }
+        
+        function checkFilled(){
+           /*
+            var inputV1 = document.getElementsByClassName('input-xlarge')[10].value;
+            var inputV2 = document.getElementsByClassName('input-xlarge')[7].value;
+            
+            //I'm working on this one
+            
+            //alert(inputV1);
+            //alert(inputV2);
+            
+            //var inputs = []
+            //inputs.push(inputV1);
+            //inputs.push(inputV2);
+            
+            if(isAlpha(inputV1)){
+                inputV1.style.borderColor = "red";
+                    
+            }else{
+                inputV1.style.borderColor = "";
+                    
+            }
+            */    
+            return;
+            
+        }
+        //checkFilled();
+        
+        
+        function clickHandler(){
+            var First_Name = document.getElementsByClassName('input-xlarge')[0].value;
+            var Last_Name = document.getElementsByClassName('input-xlarge')[1].value;
+            var Preferred_Email = document.getElementsByClassName('input-xlarge')[2].value;
+            var Address_1 = document.getElementsByClassName('input-xlarge')[3].value;
+            var Address_2 = document.getElementsByClassName('input-xlarge')[4].value;
+            var City = document.getElementsByClassName('input-xlarge')[5].value;
+            var State = document.getElementsByClassName('input-xlarge')[6].value;
+            var Zip = document.getElementsByClassName('input-xlarge')[7].value;
+            var Grade = document.getElementsByClassName('input-xlarge')[8].value;
+            var Major = document.getElementsByClassName('input-xlarge')[9].value;
+            var StudentID = document.getElementsByClassName('input-xlarge')[10].value;
+            
+            numValidation(Zip);
+            numValidation(StudentID);
+            
+            /*
+            var formArray = [];
+            formArray.push(First_Name);
+            formArray.push(Last_Name);
+            formArray.push(Preferred_Email);
+            formArray.push(Address_1);
+            formArray.push(Address_2);
+            formArray.push(City);
+            formArray.push(State);
+            formArray.push(Zip);
+            formArray.push(Grade);
+            formArray.push(Major);
+            formArray.push(StudentID);
+            */
+            
+            Parse.initialize("tRAbKVXPQvh1fFdL5yqoyiPOaapKmKWQMbtvPjEF", "a0o2mVpv6XDai3h9HGPBcEu8e0awPtql9QwBLQ2z");
+            var memberData = Parse.Object.extend("MemberData");
+            var MemberData = new memberData;
+            
+            MemberData.set("First_Name", First_Name);
+            MemberData.set("Last_Name", Last_Name);
+            MemberData.set("Preferred_Email", Preferred_Email);
+            MemberData.set("Address_1", Address_1);
+            MemberData.set("Address_2", Address_2);
+            MemberData.set("City", City);
+            MemberData.set("State", State);
+            MemberData.set("Zipcode",Zip);
+            MemberData.set("Year_In_School",Grade);
+            MemberData.set("Major",Major);
+            MemberData.set("StudentID",StudentID);
+            
+            MemberData.save(); 
+            
+            alert("Success! Thank you for signing up!");
+        }
+    </script>
+    
 </div>
     </ul>
     
